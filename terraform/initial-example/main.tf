@@ -31,6 +31,11 @@ output "alb_dns_name" {
   description = "The DNS name of the ALB"
 }
 
+output "subnet_list" {
+  value = data.aws_subnets.default.ids
+  description = "The DNS name of the ALB"
+}
+
 # resource "aws_instance" "example" {
 #   ami           = "ami-0ea1cddefe0c4aed5"
 #   instance_type = "t2.micro"
